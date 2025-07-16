@@ -161,7 +161,44 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <div class="work-list moreProjects">
+                <div class="work">
+                    <video width="240" height="320" autoplay loop muted>
+                    <source src="currencyConverterVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>The exchange rate of all countries is calculated.</p>
+                        <!-- <a href="">- icon to add</a> -->
+                    </div>
+                </div>               
+                <div class="work">
+                    <video width="240" height="320" autoplay loop muted >
+                    <source src="calc.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Calculator for mathematical operations</p>
+                        <!-- <a href="">- icon to add</a> -->
+                    </div>
+                </div>                
+                <div class="work">
+                    <video width="240" height="320" autoplay loop muted>
+                    <source src="galleryVid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    <div class="layer">
+                        <h3>Gallery Of Images</h3>
+                        <p>Basic representation of images </p>
+                        <!-- <a href="">- icon to add</a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="#portfolio" class="btn see-more">See More</a>
         </div>
       </div>
       <!-- CONTACT -->
@@ -195,17 +232,7 @@
                 <p>Copyright @ Nabeel . Made with <i class="fa-solid fa-heart"></i> by Nabeel </p>
             </div>
        </div>
-    <script src="portfolio.js"></script>
-    <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwV0kzBdoZU8OpiTB2dvtZTriHvuIYIyK5LIZ9Ox43ZsJi_RTlRc_QKXo_Q2i0IkAFeGQ/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
+    <script src="portfolioDup.js"></script>
 </body>
 </html>
+<!-- <i class="fa-solid fa-paper-plane"></i> -->
