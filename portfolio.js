@@ -1,4 +1,4 @@
-var tablinks = document.getElementsByClassName("tab-links");
+ var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 opentab = (event,tabname) =>{
     for(tablink of tablinks){
@@ -15,9 +15,31 @@ openmenu = () => {
     sidemenu.style.right = "0";
 }
 closemenu = () => {
+    
     sidemenu.style.right = "-200px";
 }
-let form=document.querySelector("form");
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwV0kzBdoZU8OpiTB2dvtZTriHvuIYIyK5LIZ9Ox43ZsJi_RTlRc_QKXo_Q2i0IkAFeGQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  });
+
+
+let moreProjects = document.querySelector(".moreProjects");
+moreProjects.style.display ="none";
+
+let seeMore = document.querySelector(".see-more");
+seeMore.addEventListener("click", () => {
+    seeMore.style.display = "none";
+    // moreProjects.setAttribute("class", "work-list");
+    moreProjects.style.display = "grid";
+    moreProjects.style.gridTemplateColumns = "repeat(auto-fit, minmax(300px, 1fr))";
+    moreProjects.style.gap = "40px";
+});
 let msg=document.querySelector("#msg");
 let button =document.querySelector("button");
 button.addEventListener("click", () => {
@@ -25,6 +47,5 @@ button.addEventListener("click", () => {
     button.style.color = "black";
     button.innerText = "Submitted";
     msg.innerText="Thanks for the feedback";
-    form.reset();
 });
 
