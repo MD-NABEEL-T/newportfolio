@@ -30,8 +30,6 @@ closemenu = () => {
 
 
 let moreProjects = document.querySelector(".moreProjects");
-moreProjects.style.display ="none";
-
 let seeMore = document.querySelector(".see-more");
 seeMore.addEventListener("click", () => {
     seeMore.style.display = "none";
