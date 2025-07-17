@@ -404,3 +404,6 @@ nav .fa-solid{
 .fa-solid.fa-briefcase{
     color:brown;
 }
+.moreProjects {
+  display: none;
+}
