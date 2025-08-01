@@ -337,13 +337,23 @@ nav .fa-solid{
 @media only screen and (max-width:600px){
     #header{
         background-image: url(Nabeel3-removebg-preview.png);
+        width:100vw;
+        height:100vh;
     }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
     }
     .header-text h1{
-        font-size:30px;
+        font-size:40px;
+        position : absolute;
+        bottom: 20px;
+    }
+    .header-text p{
+        font-size: 20px;
+        position :relative;
+        top:200px;
+
     }
     nav .fa-solid{
         display:block;
