@@ -18,6 +18,12 @@ closemenu = () => {
     
     sidemenu.style.right = "-200px";
 }
+// Close menu after clicking 
+document.querySelectorAll("#sidemenu li a").forEach(link => {
+  link.addEventListener("click", () => {
+    closemenu(); 
+  });
+});
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwV0kzBdoZU8OpiTB2dvtZTriHvuIYIyK5LIZ9Ox43ZsJi_RTlRc_QKXo_Q2i0IkAFeGQ/exec'
   const form = document.forms['submit-to-google-sheet']
 
