@@ -345,12 +345,12 @@ nav .fa-solid{
         font-size: 16px;
     }
     .header-text h1{
-        font-size:40px;
-        position : absolute;
-        bottom: 20px;
+        font-size:25px;
+        position :relative;
+        top: 200px;
     }
     .header-text p{
-        font-size: 20px;
+        font-size: 15px;
         position :relative;
         top:200px;
 
